@@ -3,7 +3,7 @@
 # Вызовите ее внутри функций, описанных ниже
 # Подсказка: Имя функции можно получить с помощью func.__name__
 
-def func_name(func, *args):
+def print_func_name_and_args(func, *args):
     print(f'Название функции: {func.__name__}')
     print('Аргумент(ы) функции:')
     for arg in args:
@@ -12,17 +12,17 @@ def func_name(func, *args):
 
 
 def open_browser(browser_name):
-    func_name(open_browser, browser_name)
+    print_func_name_and_args(open_browser, browser_name)
     pass
 
 
 def go_to_companyname_homepage(page_url):
-    func_name(go_to_companyname_homepage, page_url)
+    print_func_name_and_args(go_to_companyname_homepage, page_url)
     pass
 
 
 def find_registration_button_on_login_page(page_url, button_text):
-    func_name(find_registration_button_on_login_page, page_url, button_text)
+    print_func_name_and_args(find_registration_button_on_login_page, page_url, button_text)
     pass
 
 
